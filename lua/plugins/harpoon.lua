@@ -36,7 +36,14 @@ return {
         function()
           require("harpoon"):list():add()
         end,
-        desc = "harpoon file",
+        desc = "Add file to harpoon",
+      },
+      {
+        "<leader>R",
+        function()
+          require("harpoon"):list():remove()
+        end,
+        desc = "Remove file from harpoon",
       },
       {
         "<C-b>",
